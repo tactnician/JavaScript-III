@@ -17,9 +17,9 @@ console.log(this);
 
 // Principle 2
 function Ninja(rank, weapon, element){  
-    this.rank = rank;
-    this.weapon = weapon;
-    this.element = element; 
+    this.rank = rank,
+    this.weapon = weapon,
+    this.element = element
 }
 // code example for Implicit Binding
 
