@@ -133,3 +133,36 @@ Humanoid.prototype.greet = function(){ return `${this.name} offers a greeting in
   // * Give the Hero and Villains different methods that could be used to remove health points from objects which could result in destruction if health gets to 0 or drops below 0;
   // * Create two new objects, one a villain and one a hero and fight it out with methods!
 
+  const Hero = new Humanoid({
+    createdAt: new Date(),
+    dimensions: {
+      length: 1,
+      width: 2,
+      height: 4,
+    },
+    healthPoints: 10,
+    name: 'Naruto',
+    team: 'Kakashi',
+    weapons: [
+      'Air',
+      'Dagger',
+    ],
+    language: 'Japanese',
+  });
+
+  const Villain = new Humanoid({
+    createdAt: new Date(),
+    dimensions: {
+      length: 1,
+      width: 2,
+      height: 4,
+    },
+    healthPoints: 10,
+    name: 'Sasuke',
+    team: 'Orochimaru',
+    weapons: [
+      'Fire',
+      'Sword',
+    ],
+    language: 'Japanese',
+  });
